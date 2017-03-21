@@ -1,0 +1,293 @@
+body {
+	margin:45px 0 0 0;
+	background:#fff;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+.navbar{	
+	background: #0767c8;
+	background: -webkit-linear-gradient(top,#086ed5,#055db5);
+	background: linear-gradient(to bottom,#086ed5,#055db5);
+	border-bottom: 1px solid #044e97;
+	box-shadow: 0 1px 2px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.15);
+}
+header{
+	margin-bottom: 50px;
+}
+.navbar-brand.navbar-left{
+	font-size:28px;
+	color:#fff;
+}
+.navbar .navbar_search {
+	float:left;
+	width: 370px;
+	margin-top: 8px;
+	height: 35px;
+	position: relative;
+	display: none;
+}
+.navbar .search-input{
+	padding: 7px 50px 7px 10px;
+	width: 100%;
+	color: #49525c;
+	font-size: 14px;
+	line-height: 19px;
+	background-color: #e1eaf2;
+	border: 1px solid #045bb2;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 3px rgba(0,0,0,.2),0 1px 0 rgba(255,255,255,.1);
+	outline: 0;
+	box-sizing: border-box;
+	transition: all .2s ease-in-out;
+} 
+.navbar .search-btn{
+	background: linear-gradient(to bottom,#0e7bef,#0d73da);
+	border: 1px solid #045bb2;
+	box-shadow: 0 1px 2px rgba(0,0,0,.05),inset 0 1px 1px rgba(255,255,255,.15);
+	width: 40px;
+	height: 35px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	outline: 0;
+}
+.navbar .search-input:focus {
+    background-color: #fff;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.2),0 1px 15px rgba(255,255,255,.3);
+}
+.navbar .search-ico{
+	background-image: url(../img/more.png);
+	background-repeat: no-repeat;
+	background-position: -82px 0px;
+	width: 15px;
+	height: 15px;
+	display: block;
+	margin: 0 auto;
+}
+.navbar .navbar_button{
+	float: left;
+	margin-left: 40px;
+}
+.navbar #question_button{
+	width: 66px;
+	height: 35px;
+	line-height: 30px;
+	margin-top: 8px;
+	border: 1px solid #045bb2;
+	border-radius: 4px;
+	background: #0e78e7;
+	background: linear-gradient(to bottom,#0e7bef,#0d73da);
+	box-shadow: 0 1px 2px rgba(0,0,0,.05),inset 0 1px 1px rgba(255,255,255,.15);
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(0,0,0,.12);
+	outline: 0;
+	transition: all .2s ease-in-out;
+}
+.navbar-header{
+	position: relative;
+	width:100%;
+	
+}
+#nav-show{
+	margin: 0 auto;
+}
+.navbar .navbar_member{
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	color:#fff;
+}
+.navbar .navbar_member a {
+	text-decoration:none;
+	color:#fff;
+	font-size:14px;
+}
+#logout,#member{
+	display: none;
+}
+.glyphicon-eye-open{
+	cursor: pointer;
+	pointer-events: visible;
+}
+.modal-footer button{
+	padding: 6px 20px;
+}
+footer{
+	padding:20px 0;
+	text-align: center;
+	background: rgba(0,0,0,0.3);
+	color: #333;
+	box-shadow: 0 1px 2px rgba(0,0,0,.05),inset 0 1px 1px rgba(255,255,255,.15);
+	clear: both;
+	width: 100%;	
+}
+.fixed{
+	position: fixed;
+	left:0;
+	bottom: 0;
+}
+.modal-footer .error,.modal-footer .fail,.modal-footer .questionerror{
+	color: red;
+	text-align: center;
+	margin-right: 30px;
+}
+.modal-footer .error{
+	display: none;
+}
+.imgloding{
+	margin: 20px;
+	background: url(../img/loading.gif) no-repeat;
+	text-indent: 32px;
+	line-height: 24px;
+}
+.imgsuccess{
+	margin: 20px;
+	background: url(../img/success.gif) no-repeat;
+	text-indent: 32px;
+}
+.imgfail{
+	margin: 20px;
+	background: url(../img/error.png) no-repeat;
+	text-indent: 32px;
+	line-height: 22px;
+}
+.popover{
+	white-space: nowrap;
+}
+footer a{
+	color: #333;
+}
+.navbar-fixed-bottom, .navbar-fixed-top{
+	z-index: 99;
+}
+.modal-backdrop {
+    z-index: 100;
+}
+#questionbox{
+	z-index: 101;
+}
+.content{
+	max-width: 1000px;
+	margin:0px auto;
+	padding: 5px;
+}
+.content h4 {
+	color:#666;
+	font-weight:normal;
+}
+.content h3 {
+	color:#369;
+}
+.content .editor {
+	line-height:180%;
+	color:#333;
+}
+.content .bottom {
+	padding:5px 0 0 0;
+}
+
+.content .comment {
+	color:#369;
+	cursor:pointer;
+}
+.content .comment_list {
+	border:1px solid #ccc;
+	border-radius:4px;
+	padding:5px 10px;
+	display:none;
+	margin-top: 5px;
+}
+.content .comment_list dl {
+	margin:0;
+	padding:3px 0px 5px 0;
+}
+.content .comment_list dl dt {
+	margin:0;
+	padding:5px 0 0 0;
+	color:#369;
+}
+.content .comment_list dl dd {
+	margin:0;
+	padding:0;
+	color:#333;
+	line-height:180%;
+}
+.content .comment_list dl dd.date {
+	color:#666;
+}
+.content .comment_list dl.comment_content {
+	border-bottom:1px solid #ccc;
+}
+.content .comment_add {
+	text-align:right;
+}
+.content .comment_add textarea {
+	width:98%;
+	border:1px solid #ccc;
+	border-radius:4px;
+	background:#fff;
+	padding:5px;
+	font-size:12px;
+	color:#666;
+	margin:0 0 5px 0;
+	resize:none;
+}
+.content .comment_add input {
+	cursor:pointer;
+	max-width:100px;
+	display: inline-block;
+}
+.content .comment_add  dd{
+	text-align: right;
+}
+.content .comment_load dd {
+	background:url(../img/comment_load.gif) no-repeat 90px 50%;
+}
+.content .load_more {
+	width:100%;
+	height:30px;
+	line-height:30px;
+	cursor: pointer;
+	color: #666;
+	font-size: 12px;
+}
+.content .load_more:hover{
+	color: #333333;
+}
+.content .load_more img {
+	padding:5px 0 0 0;
+}
+.content .up {
+	float:right;
+	color:#369;
+	cursor:pointer;
+}
+.content .down {
+	font-weight:normal;
+	color:#369;
+	cursor:pointer;
+}
+.plnull{
+	color: red;
+	margin-right: 5px;
+}
+/* 小屏幕（平板，大于等于768px） */
+@media (min-width: 768px) {
+	.navbar .navbar_search {
+	display: block;
+}
+}
+
+/* 中等屏幕（桌面显示器，大于等于992px） */
+@media (min-width: 992px) {
+	
+}
+
+/* 大屏幕（大桌面显示器，大于等于1200px） */
+@media (min-width: 1200px) {
+	
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>者也（测试版）- 一个简单的交流场所</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<link rel="shortcut icon" type="image/x-icon" href="img/bitbug_favicon.ico" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header" id="nav-show">
+					<a class="navbar-brand navbar-left">
+						者也
+					</a>
+					<div class="navbar_search">
+						<input class="search-input" type="text" placeholder="搜索你感兴趣的内容..." />					
+						<button class="search-btn"><span class="search-ico"></span></button>
+				</div>
+					<div class="navbar_button">
+					<button id="question_button">提问</button>
+			</div>
+			<div class="navbar_member navbar-text">
+					<a href="javascript:void(0)" data-toggle="modal" data-target="#rge" data-backdrop= "static" id="reg_a">注册</a>
+					<a href="javascript:void(0)" id="member"></a>
+					|
+					<a href="javascript:void(0)" data-toggle="modal" data-target="#login" data-backdrop= "static" id="login_a">登录</a>
+					<a href="javascript:void(0)" id="logout">退出</a>
+				</div>
+			</div>
+				</div>
+			</nav>
+		</header>
+		<section class="main">
+			<div class="content">
+			</div>
+		</section>
+		<div class="modal fade" tabindex="-1" id="rge">
+			<!--窗口声明-->
+		<div class="modal-dialog">
+			<!--内容声明-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal">
+						<samp >&times;</samp>
+					</button>
+					<h4 class="modal-title">会员注册</h4>
+				</div>
+				<div class="modal-body">
+					<form id="regform" class="form-horizontal"  title="会员注册" onpaste="return false">
+						<div class="form-group has-feedback">
+							<label for="user" class="col-sm-2 control-label">账号</label>
+							<div class="col-sm-8 ">
+								<input data-toggle = "popover" title="账号" data-content = "不少于两位" type="text" id="user" placeholder="请输入账号" class="form-control"/>
+								<span id="usercheck" class="glyphicon glyphicon-user form-control-feedback"></span>
+							</div>
+						</div>
+						<div class="form-group has-feedback">
+							<label for="pass" class="col-sm-2 control-label">密码</label>
+							<div class="col-sm-8">	
+								<input data-toggle = "popover" title="密码" data-content = "不少于6位" type="password" id="pass" placeholder="请输入密码" class="form-control"/> 
+								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+							</div>
+						</div>
+						<div class="form-group has-feedback">
+							<label for="notpass" class="col-sm-2 control-label">密码确认</label>
+							<div class="col-sm-8">
+								<input data-toggle = "popover" title="密码确认" data-content = "和密码相同" id="notpass" type="password" placeholder="请输入密码" class="form-control"/>
+								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+							</div>
+						</div>
+						<center>
+							<div class="btn-group"  data-toggle = "buttons">
+							<label class="btn btn-primary active">
+								<input type="radio" name="sex" checked value="男"/>男
+							</label>
+							<label class="btn btn-primary">
+								<input type="radio" name="sex" value="女"/>女
+							</label>
+						</div>
+						</center>
+					</form>		
+				</div>
+				<div class="modal-footer">
+					<span class="fail"></span>
+					<button id="regbt" class="btn  btn-primary">注册</button>
+				</div>
+			</div>
+		</div>	
+		</div>
+		<div class="modal fade" tabindex="-1" id="login">
+			<!--窗口声明-->
+		<div class="modal-dialog">
+			<!--内容声明-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal">
+						<samp >&times;</samp>
+					</button>
+					<h4 class="modal-title">会员登录</h4>
+				</div>
+				<div class="modal-body">
+					<form id="loginform" class="form-horizontal" title="会员登录">
+						<div class="form-group has-feedback">
+							<label for="user2" class="col-sm-2 control-label">账号</label>
+							<div class="col-sm-8 ">							
+								<input type="text" id="user2" placeholder="请输入账号" class="form-control"/>
+								<span class="glyphicon glyphicon-user form-control-feedback"></span>
+							</div>
+						</div>
+						<div class="form-group has-feedback">
+							<label  for="pass2" class="col-sm-2 control-label">密码</label>
+							<div class="col-sm-8">	
+								<input type="password" id="pass2" placeholder="请输入密码" class="form-control"/> 
+								<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+							</div>
+						</div>
+						<div class="checkbox">
+								<div class="col-sm-3"></div>
+							<label class="col-sm-7"><input name="expires" id="expires" type="checkbox" />登录后有效期一周</label>
+						</div>
+					</form>						
+				</div>
+				<div class="modal-footer">
+					<span class="error">账号或密码错误</span>
+					<button id="loginbt" class="btn btn-primary">登陆</button>
+				</div>
+			</div>
+		</div>	
+		</div>
+		<div class="modal fade" tabindex="-1" id="state">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				</div>
+			</div>	
+		</div>
+		<div class="modal fade" tabindex="-1" id="questionbox">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+							<button class="close" data-dismiss="modal">
+								<samp >&times;</samp>
+							</button>
+							<h4 class="modal-title">提问</h4>
+					</div>
+					<div class="modal-body">
+						<form id="question" class="form-horizontal" title="提问">
+								<div class="form-group">
+									<label for="questiontitle" class="col-sm-2 control-label">问题名称</label>
+									<div class="col-sm-8 ">							
+										<input type="text" id="questiontitle" placeholder="请输入问题名称" class="form-control"/>
+									</div>
+								</div>
+								<textarea id="container" name="content">请输入问题描述！</textarea>				
+						</form>
+					</div>
+					<div class="modal-footer">
+						<span class="questionerror"></span>
+					<button id="questionbt" class="btn btn-primary">发布</button>
+				</div>
+				</div>
+			</div>	
+		</div>
+		<footer id="footer">
+			by徐新 | <a target="_blank" href="http://www.xuxingeren.com/index">http://www.xuxingeren.com/index</a>
+		</footer>
+	</body>
+		<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+		<script type="text/javascript" src="js/jquery.cookie.js" ></script>	
+		<script type="text/javascript" src="ueditor/ueditor.config.js"></script>
+        <script type="text/javascript" src="ueditor/ueditor.all.js"></script>
+        <script type="text/javascript" src="js/index.js" ></script>
+</html>

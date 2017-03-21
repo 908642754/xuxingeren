@@ -1,0 +1,159 @@
+body {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.7;
+    font-family: 'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;
+}
+.main{
+	width: 300px;
+	margin: 0 auto;
+    padding: 30px 0;
+}
+ .top article{
+	text-align: center;
+}
+.top  article h1{
+	font-weight: bold;
+	font-size: 45px;
+	color: #0f88eb;
+}
+.top  article p{
+	margin: 30px 0 20px;
+	font-weight: 400;
+	font-size: 18px;
+}
+.center{
+	text-align: center;
+}
+.nav{
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+.nav-slider{
+	position: relative;
+	display: inline-block;
+}
+.nav-slider a.active {
+    color: #0f88eb;
+    opacity: 1;
+}
+.nav-slider a{
+	float: left;
+	width: 4em;
+	line-height: 35px;
+	opacity: .7;
+	transition: opacity .15s,color .15s;
+	text-decoration: none;
+	color: #555;
+}
+.nav-slider a:hover{
+	opacity: 1;
+}
+.nav-slider-bar{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin: 0 .8em;
+	width: 2.4em;
+	height: 2px;
+	background: #0f88eb;
+	transition: left .15s ease-in;
+}
+.view{
+	margin: auto;
+	width: 300px;
+	text-align: left;
+	display: none;
+}
+.signup{
+	display: block;
+}
+.signin-box,.signup-box{
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+}
+.group-inputs{
+	padding: 1px 0;
+	border: 1px solid #d5d5d5;
+	border-radius: 3px;
+}
+.signin-box input,.signup-box input{
+	line-height: 19px;
+	color: #555;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	background: #fff;
+	padding: 1em .8em;
+	width: 100%;
+	box-sizing: border-box;
+	outline: 0;
+}
+.solid{
+	border-top: 1px solid #e8e8e8;
+}
+.signin-btn,.signup-btn,.wrapper{
+	margin-top: 22px;
+}
+.submit {
+    display: block;
+    padding: 0;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    outline: 0;
+    cursor: pointer;
+     background: #0f88eb;
+    box-shadow: none;
+    border: 0;
+    border-radius: 3px;
+    line-height: 41px;
+    color: #fff;
+}
+.clearfix:after{
+	clear: both;
+}
+.remember-me{
+	float: left;
+	font-size: 14px;
+}
+.remember-me input{
+	vertical-align: -1px;
+	margin-right: 3px;
+}
+.unable-login{
+	float: right;
+	font-size: 14px;
+	color: inherit;
+}
+.relation-box{
+	height: 55px;
+	width: 100%;
+	text-align: center;
+	line-height: 55px;
+	color: #666;
+}
+.relation{
+	border: none;
+	outline: 0;
+}
+footer{
+	padding:20px 0;
+	text-align: center;
+	background: rgba(0,0,0,0.3);
+	color: #333;
+	box-shadow: 0 1px 2px rgba(0,0,0,.05),inset 0 1px 1px rgba(255,255,255,.15);
+	clear: both;
+	width: 100%;	
+}
+.fixed{
+	position: fixed;
+	left:0;
+	bottom: 0;
+}
+footer a{
+	color: #333;
+}
+
